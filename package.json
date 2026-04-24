@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./",
+    "build": "parcel build index.html --public-url /forkify-test/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "postinstall": "patch-package"
