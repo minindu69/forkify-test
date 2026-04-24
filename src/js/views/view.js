@@ -1,3 +1,5 @@
+import icons from 'url:../img/icons.svg';
+
 export default class View {
   _parentElement;
   _data;
@@ -103,7 +105,7 @@ export default class View {
       <div class="message">
           <div>
             <svg>
-              <use href="${this._icons}#icon-smile"></use>
+              <use href="${icons}#icon-smile"></use>
             </svg>
           </div>
             <p>${message}</p>
@@ -114,4 +116,3 @@ export default class View {
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 }
-
